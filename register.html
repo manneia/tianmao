@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>小清新的登陆注册切换效果</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/registerNav.css">
+	<link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+	<!-- /*页面最顶部------开始*/ -->
+	<div class="pagetop">
+		<div class="pagetop-content">
+			<ul class="nav-bd">
+				<li>
+					<a href="login.html" target="_Blank">亲,请登录</a>
+				<li>
+					<a href="register.html" target="_Blank">免费注册</a>
+				</li>
+				<li>
+					<a href="./index.html">手机逛淘宝</a>
+				</li>
+			</ul>
+			<ul class="nav-hd">
+				<li>
+					<a href="javascript:;"><i class="iconfont icon-liebiao"></i>网站导航</a>
+				</li>
+				<li><a href="javascript:;">商家支持</a></li>
+				<li><a href="javascript:;">淘宝网</a></li>
+				<li>
+					<a href="javascript:;"><i class="iconfont icon-shouji"></i>手机版</a>
+				</li>
+				<li>
+					<a href="cart.html"><i class="iconfont icon-gouwuchexuanzhong"></i>购物车</a>
+				</li>
+				<li class="navli">
+					<a href="./index.html">我的淘宝
+					</a>
+					<ul class="nav-body" style="display: none;">
+						<li>
+							<a href="javascript:;">已买的宝贝</a>
+						</li>
+						<li>
+							<a href="javascript:;">浏览足迹</a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="./index.html">淘宝网首页</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /*页面最顶部------结束*/ -->
+
+
+	<!-- 注册主体 -->
+	<div class="container">
+		<div class="register-title">
+			<h2>用户注册</h2>
+		</div>
+		<div class="register-box">
+			<ul>
+				<li>
+					<label id="tel">
+						<span>手机号码</span><input type="tel" placeholder="请输入你的手机号" class="RegisterPhone panel"
+							id="RegisterPhone">
+					</label>
+				</li>
+				<li>
+					<label id="password">
+						<span>密码</span><input type="password" placeholder="请输入密码" class="RegisterPassword panel"
+							id="RegisterPassword">
+					</label>
+				</li>
+				<li>
+					<label id="verification">
+						<span>验证码</span><input type="text" class="number panel" placeholder="请输入验证码"
+							id="VerificationCode">
+						<a href="javascript:;" class="getCode">获取验证码</a>
+						<div class="numberCode"></div>
+					</label>
+				</li>
+				<li id="checkbox">
+					<input type="checkbox" class="checkbox">
+					<span>已阅读并同意以下协议淘宝平台服务协议、隐私权政策、法律声明、支付宝及客户端服务协议</span>
+				</li>
+				<li>
+					<label>
+						<input type="button" value="注册" class="btn" id="Btn">
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<iframe src="foot.html" frameborder="0" style="width: 100%; height: 280px"></iframe>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/register.js"></script>
+
+</body>
+
+</html><br>

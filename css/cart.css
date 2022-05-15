@@ -1,0 +1,285 @@
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouji:before {
+  content: "\e604";
+}
+
+.icon-liebiao:before {
+  content: "\e61d";
+}
+
+.icon-gouwuchexuanzhong:before {
+  content: "\e61e";
+}
+
+
+
+* {
+  line-height: 1.6em;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+tbody td img {
+  width: 150px;
+  height: 150px;
+}
+
+
+
+/*页面最顶部------开始*/
+.pagetop {
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 32px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.pagetop a:hover {
+  color: #FF0036;
+}
+
+/*页面最顶部类容*/
+.pagetop-content {
+  width: 1230px;
+  margin: 0px auto;
+}
+
+.pagetop-content li a i {
+  margin-right: 3px;
+}
+
+.pagetop-content p {
+  line-height: 32px;
+  height: 32px;
+  color: #999;
+  font-size: 10px;
+  float: left;
+}
+
+.pagetop-content p a {
+  text-decoration: none;
+  color: #999;
+  margin-left: 20px;
+}
+
+.pagetop-content p a:first-child {
+  color: #FF0036;
+}
+
+.pagetop-content ul li {
+  list-style: none;
+  float: right;
+}
+
+.pagetop-content ul li a {
+  text-decoration: none;
+  color: #999;
+  margin-left: 20px;
+  font-size: 10px;
+  line-height: 32px;
+}
+
+.pagetop-content ul li a i {
+  color: red;
+}
+
+/*页面最顶部------结束*/
+
+
+/*页面头部     开始*/
+.head {
+  width: 100%;
+  height: 200px;
+}
+
+.logo {
+  margin: 80px 150px;
+  float: left;
+}
+
+.text {}
+
+/*页面头部     结束*/
+
+
+
+
+
+.container {
+  width: 1000px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tablestyle {
+  font-size: 12px;
+  background: #fff;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#tablestyle th {
+  font-size: 14px;
+  font-weight: normal;
+  color: black;
+  padding: 10px 8px;
+  border-bottom: 2px solid red;
+}
+
+#tablestyle td {
+  border-bottom: 1px solid #ccc;
+  color: #3c3c3c;
+  padding: 6px 8px;
+}
+
+#tablestyle tbody tr:hover td {
+  background-color: #FFFAFA;
+}
+
+#tablefoot {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+}
+
+#tablefoot li {
+  line-height: 34px;
+  list-style: none;
+  float: right;
+}
+
+#jiesuan {
+  background-color: #4CAF50;
+  border-radius: 10%;
+  border: none;
+  color: white;
+  padding: 3px 8px;
+  margin: 0px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#deleteBut {
+  background-color: #DC143C;
+  border-radius: 10%;
+  border: none;
+  color: white;
+  padding: 3px 8px;
+  margin: 0px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#goods-num {
+  width: 77px;
+  height: 25px;
+  display: block;
+  position: relative;
+}
+
+#goods-num input {
+  float: left;
+  width: 38px;
+  height: 15px;
+  line-height: 15px;
+  border: 1px solid #aaa;
+  color: #343434;
+  text-align: center;
+  padding: 4px 0;
+  background-color: #fff;
+  position: absolute;
+  left: 18px;
+  top: 0;
+}
+
+#goods-num a {
+  text-decoration: none;
+  float: left;
+  display: block;
+  height: 23px;
+  width: 17px;
+  border: 1px solid #e5e5e5;
+  background: #f0f0f0;
+  text-align: center;
+  line-height: 23px;
+  color: #444;
+  position: absolute;
+  top: 0;
+}
+
+.checkBox,
+.checkBoxAll {
+  width: 20px;
+  height: 20px;
+}
+
+#allmoney,
+.amount-sum {
+  color: red;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.bg {
+  background: rgba(98, 94, 390, .1)
+}
+
+/*模态框*/
+.modal {
+  display: none; /* 默认隐藏 */
+  position: fixed; /* 根据浏览器定位 */
+  z-index: 1; /* 放在顶部 */
+  left: 0;
+  top: 0;
+  width: 100%; /* 全宽 */
+  height: 100%; /* 全高 */
+  overflow: auto; /* 允许滚动 */
+  background-color: rgba(0,0,0,0.4); /* 背景色 */
+}
+/*模态框内容*/
+.modal-content {
+  display: flex; /*采用flexbox布局*/
+  flex-direction: column; /*垂直排列*/
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto; /*距顶部15% 水平居中*/
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  animation: topDown 0.4s; /*自定义动画，从模态框内容上到下出现*/
+}
+
+/*模态框头部*/
+.modal-header {
+  display: flex; /*采用flexbox布局*/
+  flex-direction: row; /*水平布局*/
+  align-items: center; /*内容垂直居中*/
+  justify-content: space-between; 
+}
+/*关闭X 样式*/
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

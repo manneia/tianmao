@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>购物详情</title>
+	<link rel="stylesheet" type="text/css" href="./css/showShop.css">
+</head>
+<body>
+
+<!-- /*页面最顶部------开始*/ -->
+<div class="pagetop">
+	<div class="pagetop-content">
+		<p><img src="images/shopList-Home.png"><a href="index.html">天猫首页</a><a href="login.html" target="_Blank">请登录</a><a href="register.html" target="_Blank">免费注册</a></p>
+		<ul>
+			<li><a href="javascript:;"><i class="iconfont icon-liebiao"></i>网站导航</a></li>
+			<li><a href="javascript:;">商家支持</a></li>
+			<li><a href="javascript:;">淘宝网</a></li>
+			<li><a href="javascript:;"><i class="iconfont icon-shouji"></i>手机版</a></li>
+			<li><a href="javascript:;">收藏夹</a></li>
+			<li><a href="cart.html"><i class="iconfont icon-gouwuchexuanzhong"></i>购物车</a></li>
+			<li><a href="javascript:;">我的淘宝</a></li>
+		</ul>
+	</div>
+</div>
+<!-- /*页面最顶部------结束*/ -->
+
+<div style="clear: both;"></div>
+
+<!-- 搜索框--------开始 -->
+<div class="search-box">
+	<div class="content">
+		<div class="logo"><a href="index.html"><img src="images/head-logo.png"></a></div>
+		<div class="search"><input type="text" id="searchInput" placeholder="搜索 天猫 商品/品牌/店铺"><input type="submit" value="搜 索" id="submitInput"><input type="submit" id="searchOtherInput" value="搜本店"></div>
+	</div>
+</div>
+<!-- 搜索框--------结束 -->
+
+<div style="clear: both;"></div>
+
+<!-- 广告页面----------开始 -->
+<div class="banner"></div>
+<!-- 广告页面----------结束 -->
+
+
+<!-- 主要内容----------开始 -->
+<div class="main">
+	<!-- 商品展示---------开始 -->
+	<div class="showShop">
+		<div class="showImg-middle">
+			<img src="images/天猫电器城-main-item-img-3.jpg" width="400px" height="400px" id="middleImg">
+			<div id="cover"></div>
+		</div>
+		<div class="showImg-big">
+			<img src="images/天猫电器城-main-item-img-3.jpg" width="800px" height="800px" id="bigImg">
+		</div>
+		<div class="imgList">
+			<li><img src="images/天猫电器城-main-item-img-3.jpg" width="50px" height="50px" id="smallImg"></li>
+			<li><img src="images/天猫电器城-main-item-img-4.jpg" width="50px" height="50px"></li>
+			<li><img src="images/天猫电器城-main-item-img-5.jpg" width="50px" height="50px"></li>
+			<li><img src="images/天猫电器城-main-item-img-6.jpg" width="50px" height="50px"></li>
+			<li><img src="images/天猫电器城-main-item-img-7.jpg" width="50px" height="50px"></li>
+		</div>
+
+
+		<div class="showShop-content">
+			<h1>C罗SIXPAD智能健腹仪CR7+2BODY腹部健腹器懒人智能健腹收腹腹肌贴</h1>
+			<p>商品特色： <span id="info">双USB接口，纯铜机身一体成型，精选优质芯片，智能分配输出电流，充电快速安全。</span></p>
+			<div class="info">
+				<img src="images/showShop-showShop-content-bg.png">
+				<p class="oldPice">专柜价<i>¥</i><s>1499</s></p>
+				<p class="nowPice">狂暑假<i>¥</i><span>999</span><img src="images/天猫狂暑季Logo.png"></p>
+			</div>
+			<div class="changeNum">
+				数量<input type="text" value="1" id="buyNum" onkeyup="value=value.replace(/[^\d]/g,'')">
+				<span id="add">∧</span>
+				<span id="minus">∨</span>
+				<p>总价： <span>999</span></p>
+			</div>
+			<div class="huabei">
+				<div class="huabei-title">选择花呗分期付款</div>
+				<div class="huabei-item" id="huabei-item-one"><p><i>¥</i><b>998</b>x3期</p>(0元手续费)</div>
+				<div class="huabei-item" id="huabei-item-two"><p><i>¥</i><b>298</b>x6期</p>(0元手续费)</div>
+				<div class="huabei-item" id="huabei-item-three"><p><i>¥</i><b>198</b>x12期</p>(含手续费)</div>
+			</div>
+			<div class="button">
+				<input type="button" value="立即购买" id="buyNow">
+				<input type="button" value="加入购物车" id="addCartBut">
+			</div>
+		</div>
+	</div>
+	<!-- 商品展示---------结束 -->
+
+	<!-- 下面商品介绍---------开始 -->
+	<div class="mainBottom">
+		<img src="images/showShop-Bottom-1.png">
+	</div>
+	<!-- 下面商品介绍---------结束 -->
+
+	<!-- 右边列表-----------开始 -->
+	<div class="rightNav">
+		<div class="title"><b></b><span>看了又看</span></div>
+		<div class="list">
+			<ul>
+				<li>
+					<img src="images/showShop-Right-Nav-img.jpg">
+					<p>¥1012.00</p>
+				</li>
+				<li>
+					<img src="images/showShop-Right-Nav-img.jpg">
+					<p>¥1012.00</p>
+				</li>
+				<li>
+					<img src="images/showShop-Right-Nav-img.jpg">
+					<p>¥1012.00</p>
+				</li>
+				<li>
+					<img src="images/showShop-Right-Nav-img.jpg">
+					<p>¥1012.00</p>
+				</li>
+				<li>
+					<img src="images/showShop-Right-Nav-img.jpg">
+					<p>¥1012.00</p>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<!-- 右边列表-----------结束 -->
+</div>
+<!-- 主要内容----------结束 -->
+
+
+<!-- 页脚 -->
+<iframe src="foot.html" frameborder="0" style="width: 100%;height: 280px;margin-top: 50px;border-top: 2px solid red;"></iframe>
+
+
+
+
+<script type="text/javascript" src="./js/jquery-1.4.1.min.js"></script>
+<4script type="text/javascript" src="./js/"></4script>
+
+</body>
+</html>

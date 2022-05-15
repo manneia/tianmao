@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>购物车</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/cart.css" />
+    <!-- <script type="text/javascript" src="js/cart.js"></script> -->
+    <script src="./js/jQuery插件.js"></script>
+    <script src="./js/cart1.js"></script>
+  </head>
+
+  <body>
+    <!-- /*页面最顶部------开始*/ -->
+    <div class="pagetop">
+      <div class="pagetop-content">
+        <p>
+          汪，欢迎来天猫<a href="login.html" target="_Blank">请登录</a
+          ><a href="register.html">免费注册</a>
+        </p>
+        <ul>
+          <li>
+            <a href="javascript:;"><i class="iconfont icon-liebiao"></i>网站导航</a>
+          </li>
+          <li><a href="javascript:;">商家支持</a></li>
+          <li><a href="javascript:;">淘宝网</a></li>
+          <li>
+            <a href="javascript:;"><i class="iconfont icon-shouji"></i>手机版</a>
+          </li>
+          <li><a href="javascript:;">收藏夹</a></li>
+          <li>
+            <a href="cart.html"
+              ><i class="iconfont icon-gouwuchexuanzhong"></i>购物车</a
+            >
+          </li>
+          <li><a href="javascript:;">我的淘宝</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /*页面最顶部------结束*/ -->
+
+    <!-- 头部--------------开始 -->
+    <div class="head">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/head-logo.png" width="2.3rem" height=".4125rem"
+        /></a>
+      </div>
+      <div class="text"></div>
+    </div>
+    <!-- 头部--------------结束 -->
+
+    <!-- 购物车表单开始 -->
+    <div class="container">
+      <p style="text-align: right"><img src="images/购物车流程.jpg" /></p>
+      <br />
+      <table id="tablestyle">
+        <thead>
+          <tr>
+            <th>
+              <input
+                type="checkbox"
+                class="checkBoxAll"
+                id="allcheck"
+              />&nbsp;全选
+            </th>
+            <th>商品图片</th>
+            <th>商品名字</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th width="14%">小计</th>
+            <th>修改</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" class="checkBox" name="product" /></td>
+            <td><img src="images/天猫国际-right-2.jpg" /></td>
+            <td>吕洗发水</td>
+            <td class="goodsprice">￥128.23</td>
+            <td>
+              <div id="goods-num">
+                <a href="javascript:void(0)" class="reduce">-</a>
+                <input type="text" class="goodsnum" value="1" />
+                <a href="javascript:void(0)" style="right: 0" class="itxt">+</a>
+              </div>
+            </td>
+            <td class="goodssnum">￥128.23</td>
+            <td><a href="javascript:void(0) " class="dle">删除</a></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checkBox" name="product" /></td>
+            <td><img src="images/天猫国际-right-1.jpg" /></td>
+            <td>毕加索钢笔</td>
+            <td class="goodsprice">￥50.50</td>
+            <td>
+              <div id="goods-num">
+                <a href="javascript:void(0)" class="reduce">-</a>
+                <input type="text" class="goodsnum" value="1" />
+                <a href="javascript:void(0)" style="right: 0" class="itxt">+</a>
+              </div>
+            </td>
+            <td class="goodssnum">￥50.50</td>
+            <td><a href="javascript:void(0)" class="dle">删除</a></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checkBox" name="product" /></td>
+            <td><img src="images/天猫国际-right-4.jpg" /></td>
+            <td>厨房用锅</td>
+            <td class="goodsprice">￥749</td>
+            <td>
+              <div id="goods-num">
+                <a href="javascript:void(0)" class="reduce">-</a>
+                <input type="text" class="goodsnum" value="1" />
+                <a href="javascript:void(0)" style="right: 0" class="itxt">+</a>
+              </div>
+            </td>
+            <td class="goodssnum">￥749</td>
+            <td><a href="javascript:void(0)" class="dle">删除</a></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checkBox" name="product" /></td>
+            <td><img src="images/天猫国际-right-5.jpg" /></td>
+            <td>进口皮带</td>
+            <td class="goodsprice">￥300</td>
+            <td>
+              <div id="goods-num">
+                <a href="javascript:void(0)" class="reduce">-</a>
+                <input type="text" class="goodsnum" value="1" />
+                <a href="javascript:void(0)" style="right: 0" class="itxt">+</a>
+              </div>
+            </td>
+            <td class="goodssnum">￥300</td>
+            <td><a href="javascript:void(0)" class="dle">删除</a></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checkBox" name="product" /></td>
+            <td><img src="images/天猫国际-right-6.jpg" /></td>
+            <td>Adidas Yeezy Boost 350 V2 侃爷冰蓝</td>
+            <td class="goodsprice">￥3500</td>
+            <td>
+              <div id="goods-num">
+                <a href="javascript:void(0)" class="reduce">-</a>
+                <input type="text" class="goodsnum" value="1" />
+                <a href="javascript:void(0)" style="right: 0" class="itxt">+</a>
+              </div>
+            </td>
+            <td class="goodssnum">￥3500</td>
+            <td><a href="javascript:void(0)" class="dle">删除</a></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checkBox" name="product" /></td>
+            <td><img src="images/天猫国际-right-3.jpg" /></td>
+            <td>小ck女包</td>
+            <td class="goodsprice">￥1200</td>
+            <td>
+              <div id="goods-num">
+                <a href="javascript:void(0)" class="reduce">-</a>
+                <input type="text" class="goodsnum" value="1" />
+                <a href="javascript:void(0)" style="right: 0" class="itxt">+</a>
+              </div>
+            </td>
+            <td class="goodssnum">￥1200</td>
+
+            <td><a href="javascript:void(0)" class="dle">删除</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="tablefoot">
+        <ul>
+          <li>
+            <input
+              style="margin: left 0.0625rem"
+              type="checkbox"
+              class="checkBoxAll"
+              id="allcheck"
+            />&nbsp;全选
+          </li>
+
+          <li><input type="submit" value="结算" id="jiesuan" /></li>
+
+          <li id="allmoney">￥666</li>
+          <li>合计:&nbsp;</li>
+      
+ 
+          <button id="deleteBut" class="bottomDle">删除</button>
+          <li
+            class="amount-sum"
+            style="font-size: 0.175rem; padding-right: 0.1875rem"
+          >
+            已经选<em>1</em>件商品
+          </li>
+        </ul>
+      </div>
+      
+      <!-- 模态框 -->
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2>请付款</h2>
+                  <span id="closeBtn" class="close">×</span>
+              </div>
+              <div class="modal-body">
+                  <p>微信</p>
+                  <p>支付宝</p>
+              </div>
+              <div class="modal-footer">
+              </div>
+          </div>
+      </div>
+  
+    </div>
+    <!-- 购物车表单结束 -->
+
+    <!--  底部------------开始   -->
+    <!-- <iframe
+      src="foot.html"
+      frameborder="0"
+      style="
+        width: 100%;
+        height: 3.5rem;
+        border-top: 0.025rem solid red;
+        margin-top: 1.875rem;
+        padding-top: 0.25rem;
+      "
+    ></iframe> -->
+    <!-- 底部-------------结束 -->
+  
+    </div>
+  </body>
+</html>

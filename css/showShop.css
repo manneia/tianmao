@@ -1,0 +1,469 @@
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouji:before {
+  content: "\e604";
+}
+.icon-liebiao:before {
+  content: "\e61d";
+}
+.icon-gouwuchexuanzhong:before {
+  content: "\e61e";
+}
+.icon-end:before {
+  content: "\e61c";
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 微软雅黑;
+}
+body {
+  background-color: #fff;
+}
+/*页面最顶部------开始*/
+.pagetop {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 32px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.pagetop a:hover {
+  color: #ff0036;
+}
+/*页面最顶部类容*/
+.pagetop-content {
+  width: 1230px;
+  margin: 0px auto;
+}
+.pagetop-content li a i {
+  margin-right: 3px;
+}
+.pagetop-content img {
+  position: absolute;
+  top: 3px;
+}
+.pagetop-content p {
+  line-height: 32px;
+  height: 32px;
+  color: #999;
+  font-size: 10px;
+  float: left;
+  position: relative;
+}
+.pagetop-content p a {
+  text-decoration: none;
+  color: #999;
+  margin-left: 20px;
+}
+.pagetop-content p a:first-child {
+  color: #ff0036;
+}
+.pagetop-content ul li {
+  list-style: none;
+  float: right;
+}
+.pagetop-content ul li a {
+  text-decoration: none;
+  color: #999;
+  margin-left: 20px;
+  font-size: 10px;
+  line-height: 32px;
+}
+.pagetop-content ul li a i {
+  color: red;
+}
+/*页面最顶部------结束*/
+
+/*搜索框--------开始*/
+.search-box {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+.search-box .content {
+  width: 1090px;
+  height: 92px;
+  margin: 0 auto;
+}
+.search-box .content .logo {
+  float: left;
+  margin-top: 20px;
+}
+
+.search {
+  float: left;
+  margin-left: 110px;
+  margin-top: 30px;
+  position: relative;
+}
+#searchInput {
+  position: absolute;
+  border: 2px solid #ff0036;
+  color: #000;
+  margin: 0;
+  width: 370px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px 3px 5px 5px;
+  outline: 0;
+  font-weight: 900;
+}
+#submitInput {
+  position: absolute;
+  left: 380px;
+  background: #ff0036;
+  width: 90px;
+  height: 34px;
+  line-height: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #ff0036;
+  color: white;
+}
+#searchOtherInput {
+  position: absolute;
+  left: 475px;
+  background: #333;
+  width: 90px;
+  height: 34px;
+  line-height: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #333;
+  color: white;
+}
+.advertisting {
+  float: right;
+  margin-top: 10px;
+}
+/*搜索框--------结束*/
+
+/*banner页面----------开始*/
+.banner {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+/*banner页面----------结束*/
+
+/*主要页面------------开始*/
+.main {
+  width: 1190px;
+  margin: 40px auto;
+  position: relative;
+}
+
+/*商品展示开始*/
+.showShop {
+  width: 990px;
+  height: 600px;
+  border-right: 1px solid #f2f2f2;
+  position: relative;
+}
+.showImg-middle {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: relative;
+  z-index: 999;
+}
+.showImg-big {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: 415px;
+  display: none;
+  position: relative;
+}
+#bigImg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#cover {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.imgList {
+  position: absolute;
+  top: 420px;
+  left: 0px;
+  padding-left: 15px;
+}
+.imgList li {
+  list-style: none;
+  float: left;
+  margin: 8px;
+  border: 2px solid #fff;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.imgList li:first-child {
+  border: 2px solid #333;
+}
+.showShop-content {
+  float: right;
+  width: 515px;
+  height: 500px;
+  float: left;
+  margin: 0px 35px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+.showShop-content h1 {
+  text-indent: 10px;
+  padding-bottom: 0.2em;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.showShop-content p {
+  font-size: 12px;
+  text-indent: 10px;
+  color: red;
+  margin: 5px auto;
+}
+.showShop-content .info {
+  background: #e9e9e9;
+  width: 512px;
+}
+.oldPice {
+  color: #999;
+  font-size: 12px;
+  margin: 0 0 0 8px;
+}
+.oldPice i {
+  margin-left: 30px;
+  font-size: 14px;
+  color: #333;
+}
+.oldPice s {
+  font-size: 14px;
+  color: #333;
+  margin-left: 3px;
+}
+.nowPice {
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0 0 8px;
+  line-height: 36px;
+  color: red;
+  padding-bottom: 10px;
+}
+.nowPice i {
+  margin-left: 30px;
+  font-size: 18px;
+  vertical-align: middle;
+  font-style: normal;
+}
+.nowPice span {
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.nowPice img {
+  vertical-align: bottom;
+  margin: 5px 20px;
+}
+.changeNum {
+  text-indent: 10px;
+  color: #838383;
+  font-size: 14px;
+  position: relative;
+  margin-top: 20px;
+}
+.changeNum input {
+  outline: none;
+  padding: 3px 2px 0 3px;
+  line-height: 26px;
+  font-size: 12px;
+  height: 26px;
+  border: 1px solid #a7a6ac;
+  width: 36px;
+  margin-left: 37px;
+  vertical-align: middle;
+}
+.changeNum #add {
+  text-indent: 0px;
+  font-size: 16px;
+  width: 16px;
+  height: 12px;
+  display: block;
+  border: 1px solid #a7a6ab;
+  line-height: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 126px;
+  text-align: center;
+}
+.changeNum #minus {
+  text-indent: 0px;
+  font-size: 16px;
+  width: 16px;
+  height: 12px;
+  display: block;
+  border: 1px solid #a7a6ab;
+  line-height: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 17px;
+  left: 126px;
+  text-align: center;
+}
+.changeNum p {
+  position: absolute;
+  top: -5px;
+  left: 160px;
+  color: #333;
+}
+.changeNum p span {
+  color: red;
+  font-size: 24px;
+}
+.huabei {
+  width: 400px;
+  height: 150px;
+  margin-top: 20px;
+}
+.huabei-title {
+  width: 100%;
+  height: 30px;
+  color: black;
+  border: 1px solid #b8b7bd;
+  float: left;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-indent: 10px;
+  line-height: 30px;
+}
+.huabei-item {
+  text-align: center;
+  width: 120px;
+  height: 65px;
+  margin-right: 17px;
+  float: left;
+  border: 1px solid #b8b7bd;
+  color: black;
+  cursor: pointer;
+}
+.huabei-item:last-child {
+  margin-right: 0px;
+}
+.huabei-item i {
+  font-style: normal;
+  color: #000;
+}
+.huabei-item b {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+.huabei-item p {
+  padding-left: 1px;
+  color: black;
+  line-height: 20px;
+}
+#buyNow {
+  cursor: pointer;
+  margin-right: 0;
+  float: left;
+  width: 194px;
+  background-color: #ffeded;
+  border: 1px solid red;
+  color: red;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  text-align: center;
+}
+#addCartBut {
+  background: url(../images/car.png) no-repeat 20px center;
+  cursor: pointer;
+  float: left;
+  margin-left: 10px;
+  width: 194px;
+  background-color: red;
+  color: #fff;
+  border: 1px solid red;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  text-align: center;
+}
+/*商品展示结束*/
+
+/*右边商品列表-----------开始*/
+.rightNav {
+  width: 200px;
+  position: absolute;
+  right: -30px;
+  top: -20px;
+}
+.rightNav .title {
+  height: 25px;
+  margin-top: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.rightNav .title b {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 180px;
+  height: 0px;
+  border-top: 1px dotted #c9c9c9;
+}
+.rightNav .title span {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  color: #999;
+  display: block;
+  text-align: center;
+  width: 6em;
+  top: 0px;
+  left: 50%;
+  background: #fff;
+  margin-left: -3em;
+}
+.rightNav .list {
+  padding: 10px 12px 2px 13px;
+}
+.rightNav .list li {
+  cursor: pointer;
+  margin-bottom: 15px;
+  list-style: none;
+  width: 175px;
+  height: 160px;
+  text-align: center;
+  position: relative;
+}
+.rightNav .list li p {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+/*右边商品列表-----------结束*/
+
+/*主要页面------------结束*/
